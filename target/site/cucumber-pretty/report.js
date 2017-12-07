@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 5328909410,
+  "duration": 4762780693,
   "status": "passed"
 });
 formatter.scenario({
@@ -35,7 +35,7 @@ formatter.step({
 });
 formatter.step({
   "line": 7,
-  "name": "I go to the login page",
+  "name": "I go to the login page from header",
   "keyword": "When "
 });
 formatter.step({
@@ -59,49 +59,49 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "LoginStepDefinition.iNavigatedToTheHomePage()"
+  "location": "CommonStepDefinitions.iNavigatedToTheHomePage()"
 });
 formatter.result({
-  "duration": 10856817238,
+  "duration": 6405820947,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.iGoToTheLoginPage()"
+  "location": "CommonStepDefinitions.iGoToTheLoginPage()"
 });
 formatter.result({
-  "duration": 1008905746,
+  "duration": 1341679048,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.enterValidUsernameAndPassword()"
+  "location": "LoginPageStepDefinitions.enterValidUsernameAndPassword()"
 });
 formatter.result({
-  "duration": 242912511,
+  "duration": 250638324,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.iClickOnLoginButton()"
+  "location": "LoginPageStepDefinitions.iClickOnLoginButton()"
 });
 formatter.result({
-  "duration": 7091079016,
+  "duration": 5692966514,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.iShouldBeDirectedToPrivateHomePage()"
+  "location": "CommonStepDefinitions.iShouldBeDirectedToPrivateHomePage()"
 });
 formatter.result({
-  "duration": 12619631,
+  "duration": 11778796,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.myFirstNameShouldBeDisplayedAtTheHeader()"
+  "location": "CommonStepDefinitions.myFirstNameShouldBeDisplayedAtTheHeader()"
 });
 formatter.result({
-  "duration": 45501019,
+  "duration": 53239070,
   "status": "passed"
 });
 formatter.after({
-  "duration": 942614784,
+  "duration": 914211534,
   "status": "passed"
 });
 });

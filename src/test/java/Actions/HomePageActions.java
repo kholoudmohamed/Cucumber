@@ -1,17 +1,16 @@
 package Actions;
 
-import Page_Objects.HomePage;
+import PageObjects.HomePage;
 import org.openqa.selenium.WebDriver;
 
 public class HomePageActions {
-    public static void GoTo(WebDriver driver) throws Exception{
-        //System.out.println("URL is "+System.getProperty("base.url"));
+    public static void GoTo(WebDriver driver){
         driver.get(System.getProperty("base.url"));
     }
-    public static void ClickLoginFromHeader(WebDriver driver) throws Exception{
+    public static void ClickLoginFromHeader(){
         HomePage.HeaderLoginBtn.click();
     }
-    public static String GetLoggedInUserFirstName(WebDriver driver) throws Exception{
+    public static String GetLoggedInUserFirstName(){
         return HomePage.HeaderUserFirstName.getText();
     }
 

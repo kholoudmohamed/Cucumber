@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 5328909410,
+              "duration": 4762780693,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 942614784,
+              "duration": 914211534,
               "status": "passed"
             },
             "match": {
@@ -34,73 +34,73 @@
         "steps": [
           {
             "result": {
-              "duration": 10856817238,
+              "duration": 6405820947,
               "status": "passed"
             },
             "line": 6,
             "name": "I navigated to the Home Page",
             "match": {
-              "location": "LoginStepDefinition.iNavigatedToTheHomePage()"
+              "location": "CommonStepDefinitions.iNavigatedToTheHomePage()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1008905746,
+              "duration": 1341679048,
               "status": "passed"
             },
             "line": 7,
-            "name": "I go to the login page",
+            "name": "I go to the login page from header",
             "match": {
-              "location": "LoginStepDefinition.iGoToTheLoginPage()"
+              "location": "CommonStepDefinitions.iGoToTheLoginPage()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 242912511,
+              "duration": 250638324,
               "status": "passed"
             },
             "line": 8,
             "name": "Enter valid username and password",
             "match": {
-              "location": "LoginStepDefinition.enterValidUsernameAndPassword()"
+              "location": "LoginPageStepDefinitions.enterValidUsernameAndPassword()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 7091079016,
+              "duration": 5692966514,
               "status": "passed"
             },
             "line": 9,
             "name": "I click on Login button",
             "match": {
-              "location": "LoginStepDefinition.iClickOnLoginButton()"
+              "location": "LoginPageStepDefinitions.iClickOnLoginButton()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 12619631,
+              "duration": 11778796,
               "status": "passed"
             },
             "line": 10,
             "name": "I should be directed to private Home Page",
             "match": {
-              "location": "LoginStepDefinition.iShouldBeDirectedToPrivateHomePage()"
+              "location": "CommonStepDefinitions.iShouldBeDirectedToPrivateHomePage()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 45501019,
+              "duration": 53239070,
               "status": "passed"
             },
             "line": 11,
             "name": "My first name should be displayed at the header",
             "match": {
-              "location": "LoginStepDefinition.myFirstNameShouldBeDisplayedAtTheHeader()"
+              "location": "CommonStepDefinitions.myFirstNameShouldBeDisplayedAtTheHeader()"
             },
             "keyword": "And "
           }

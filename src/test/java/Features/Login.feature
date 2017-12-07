@@ -4,7 +4,7 @@ Feature: LoginFeature
   @Smoke @Regression
   Scenario: Login with correct username and password
     Given I navigated to the Home Page
-    When I go to the login page
+    When I go to the login page from header
     And Enter valid username and password
     And I click on Login button
     Then I should be directed to private Home Page
