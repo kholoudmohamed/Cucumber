@@ -1,0 +1,126 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5328909410,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Login with correct username and password",
+        "description": "",
+        "id": "loginfeature;login-with-correct-username-and-password",
+        "after": [
+          {
+            "result": {
+              "duration": 942614784,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10856817238,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I navigated to the Home Page",
+            "match": {
+              "location": "LoginStepDefinition.iNavigatedToTheHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1008905746,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I go to the login page",
+            "match": {
+              "location": "LoginStepDefinition.iGoToTheLoginPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 242912511,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter valid username and password",
+            "match": {
+              "location": "LoginStepDefinition.enterValidUsernameAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7091079016,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Login button",
+            "match": {
+              "location": "LoginStepDefinition.iClickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12619631,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be directed to private Home Page",
+            "match": {
+              "location": "LoginStepDefinition.iShouldBeDirectedToPrivateHomePage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 45501019,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "My first name should be displayed at the header",
+            "match": {
+              "location": "LoginStepDefinition.myFirstNameShouldBeDisplayedAtTheHeader()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Smoke"
+          },
+          {
+            "line": 4,
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "LoginFeature",
+    "description": "This feature deals with the login functionality of the application",
+    "id": "loginfeature",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]
