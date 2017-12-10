@@ -1,8 +1,0 @@
-Page_Objects\BasePage.class
-Step_Definitions\Hook.class
-Page_Objects\LoginPage.class
-Page_Objects\HomePage.class
-Runner\RunTests.class
-Actions\LoginPageActions.class
-Step_Definitions\LoginStepDefinition.class
-Actions\HomePageActions.class
