@@ -18,6 +18,7 @@
                 <base.url>https://www.aamlive.com</base.url>
                 <testuser.username>AAM-IntegrantDevGroup@aamlive.com</testuser.username>
                 <testuser.password>EPzcTzz!#2C+SZ4w</testuser.password>
+                <cucumber.options>--tags @Smoke</cucumber.options>
             </properties>
         </profile>
 
@@ -30,6 +31,7 @@
                 <base.url>https://qaint2.aamlive.com</base.url>
                 <testuser.username>testtrader</testuser.username>
                 <testuser.password>eServices1</testuser.password>
+                <cucumber.options>--tags @Smoke,@Regression</cucumber.options>
             </properties>
         </profile>
     </profiles>
@@ -51,6 +53,7 @@
                         <base.url>${base.url}</base.url>
                         <testuser.username>${testuser.username}</testuser.username>
                         <testuser.password>${testuser.password}</testuser.password>
+                        <cucumber.options>${cucumber.options}</cucumber.options>
                     </systemPropertyVariables>
                 </configuration>
 
