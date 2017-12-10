@@ -2,6 +2,7 @@ package Definitions;
 
 import Actions.HomePageActions;
 import PageObjects.HomePage;
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -42,4 +43,5 @@ public class CommonStepDefinitions {
         Assert.assertEquals("Username is not displayed correctly","TEST TRADER TEST TRADER", HomePageActions.GetLoggedInUserFirstName());
 
     }
+
 }

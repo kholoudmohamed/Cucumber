@@ -37,8 +37,8 @@ public class OrderPageStepDefinitions {
         OrderPageActions.ClickOn_SubmitOrderBtn();
     }
 
-    @Then("^Municipal order should be placed successfully$")
-    public void municipalOrderShouldBePlacedSuccessfully() throws Throwable {
+    @Then("^Order should be placed successfully$")
+    public void orderShouldBePlacedSuccessfully() throws Throwable {
         PageFactory.initElements(driver, OrderPage.class);
         Assert.assertTrue("Order confirmation window is not displayed",OrderPage.OrderConfirmationWindow.isDisplayed());
         Assert.assertTrue("Order number is not displayed",OrderPage.OrderNumber.isDisplayed());
@@ -67,15 +67,41 @@ public class OrderPageStepDefinitions {
             driver.switchTo().frame(OrderPage.AccountPopupFrameId());
             driver.switchTo().frame(OrderPage.AccountPopupInnerFrameId());
             try {
-                CommonActions.wait_till_Visibility_of_Element(driver, By.id(OrderPage.FirstAccountInListId()),10);
+                CommonActions.wait_till_Visibility_of_Element(driver, By.id(OrderPage.FirstAccountInListId()),5);
                 OrderPageActions.ClickOn_FirstAccountInList();
             }catch (Exception ex){
                 OrderPageActions.AddNewAccount(orderData.newAccountName,orderData.newAccountNumber,orderData.newAccountState);
-                CommonActions.wait_till_Visibility_of_Element(driver, By.id(OrderPage.SelectThisBtnId()),10);
+                CommonActions.wait_till_Visibility_of_Element(driver, By.id(OrderPage.SelectThisBtnId()),5);
                 OrderPageActions.ClickOn_SelectThisBtn();
                 driver.switchTo().defaultContent();
             }
 
+        }
+    }
+
+    @And("^I Fill in the order information with \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void iFillInTheOrderInformationWithAndAndAndAndAndAndAndAndAnd(String clearingAgent, String accountType, String receivedBy, String discrete, String solicited, String orderReceivedTimeHr, String orderReceivedTimeMin, String newAccountName, String newAccountNumber, String newAccountState) throws Throwable {
+        PageFactory.initElements(driver, OrderPage.class);
+        OrderPageActions.Select_ClearingAgentAs(clearingAgent);
+        OrderPageActions.Select_AccountTypeAs(accountType);
+
+        OrderPageActions.Enter_ReceivedByAs(receivedBy);
+        OrderPageActions.Select_DiscreteAs(discrete);
+        OrderPageActions.Select_SolicitedAs(solicited);
+        OrderPageActions.Enter_ReceivedTimeAs(orderReceivedTimeHr,orderReceivedTimeMin);
+
+        OrderPageActions.ClickOn_ChooseAccountLink();
+
+        driver.switchTo().frame(OrderPage.AccountPopupFrameId());
+        driver.switchTo().frame(OrderPage.AccountPopupInnerFrameId());
+        try {
+            CommonActions.wait_till_Visibility_of_Element(driver, By.id(OrderPage.FirstAccountInListId()),10);
+            OrderPageActions.ClickOn_FirstAccountInList();
+        }catch (Exception ex){
+            OrderPageActions.AddNewAccount(newAccountName,newAccountNumber,newAccountState);
+            CommonActions.wait_till_Visibility_of_Element(driver, By.id(OrderPage.SelectThisBtnId()),10);
+            OrderPageActions.ClickOn_SelectThisBtn();
+            driver.switchTo().defaultContent();
         }
     }
 }

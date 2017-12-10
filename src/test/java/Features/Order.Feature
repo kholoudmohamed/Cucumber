@@ -1,5 +1,5 @@
 Feature: Ordering Feature
-  This feature deals with the bonds ordering on aamlive
+  This feature deals with the bonds ordering on AAMLive
 
   @Regression
   Scenario: End to end Municipal Order
@@ -15,7 +15,7 @@ Feature: Ordering Feature
     | Pershing      | Standard    | Test User2    | No        | No        | 04                  | 00                    | TestAccount2    | 12354678          | Florida         |
     And I click review button
     And I click submit order button
-    Then Municipal order should be placed successfully
+    Then Order should be placed successfully
 
 
   @Regression
@@ -29,7 +29,7 @@ Feature: Ordering Feature
     And I Fill in the order information with "<clearingAgent>" and "<accountType>" and "<receivedBy>" and "<discrete>" and "<solicited>" and "<orderReceivedTimeHr>" and "<orderReceivedTimeMin>" and "<newAccountName>" and "<newAccountNumber>" and "<newAccountState>"
     And I click review button
     And I click submit order button
-    Then Corporate order should be placed successfully
+    Then Order should be placed successfully
     Examples:
       | clearingAgent | accountType | receivedBy    | discrete  | solicited | orderReceivedTimeHr | orderReceivedTimeMin  | newAccountName  | newAccountNumber  | newAccountState |
       | Pershing      | Wrap        | Test User1    | Yes       | No        | 01                  | 05                    | TestAccount1    | 12354             | Alaska          |
