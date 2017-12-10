@@ -1,7 +1,8 @@
+@Smoke
 Feature: LoginFeature
   This feature deals with the login functionality of the application
 
-  @Smoke @Regression
+  @Smoke
   Scenario: Login with correct username and password
     Given I navigated to the Home Page
     When I go to the login page from header

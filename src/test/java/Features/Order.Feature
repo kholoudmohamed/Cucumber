@@ -1,3 +1,4 @@
+@Regression
 Feature: Ordering Feature
   This feature deals with the bonds ordering on AAMLive
 
