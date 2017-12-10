@@ -50,7 +50,7 @@ public class OrderPageStepDefinitions {
         PageFactory.initElements(driver, OrderPage.class);
 
         // Create an array list
-        List<OrderData> ordersData= new ArrayList<OrderData>();
+        List<OrderData> ordersData;
         ordersData=table.asList(OrderData.class);
 
         for (OrderData orderData : ordersData) {
