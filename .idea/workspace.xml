@@ -17,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
+            <state relative-caret-position="386">
               <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
               <folding>
                 <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
@@ -73,11 +73,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Order.feature" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Order.feature" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Features/Order.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+            <state relative-caret-position="230">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -195,7 +195,7 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/MunicipalPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Actions/MunicipalPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/Definitions/MunicipalPageStepDefinitions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/Order.Feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/Order.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Actions/CommonActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObjects/OrderPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/Runner/RunTests.java" />
@@ -208,8 +208,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Actions/OrderPageActions.java" />
         <option value="$PROJECT_DIR$/src/test/java/Actions/LoginPageActions.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/Features/Order.feature" />
         <option value="$PROJECT_DIR$/src/test/java/Features/Login.feature" />
+        <option value="$PROJECT_DIR$/src/test/java/Features/Order.feature" />
       </list>
     </option>
   </component>
@@ -399,7 +399,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/Order.Feature" />
+      <option name="myFilePath" value="$PROJECT_DIR$/src/test/java/Features/Order.feature" />
       <option name="GLUE" value="Definitions" />
       <option name="myNameFilter" value="^End to end Municipal Order$" />
       <option name="myGeneratedName" value="Scenario: End to end Municipal Order" />
@@ -955,14 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Features/Order.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AAM.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-585">
@@ -973,11 +965,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="386">
           <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
             <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Features/Order.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

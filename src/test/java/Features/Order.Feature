@@ -1,5 +1,5 @@
 @Regression
-Feature: Ordering Feature
+Feature: OrderingFeature
   This feature deals with the bonds ordering on AAMLive
 
   @Regression
