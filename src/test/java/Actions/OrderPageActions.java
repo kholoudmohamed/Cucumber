@@ -50,7 +50,7 @@ public class OrderPageActions {
     public static void AddNewAccount (String accountName, String accountNumber,String accountState) throws InterruptedException {
         OrderPage.AddNewAccountTab.click();
 
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         OrderPage.NewAccountNameTxtBx.sendKeys(accountName);
         OrderPage.NewAccountNumberTxtBx.sendKeys(accountNumber);
 
