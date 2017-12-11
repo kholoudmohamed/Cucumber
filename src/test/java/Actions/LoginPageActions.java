@@ -11,13 +11,17 @@ public class LoginPageActions {
 
         driver.get(System.getProperty("base.url")+data.getLoginPageUrl());
     }
-    public static void EnterUserNameAndPassword(){
-        LoginPage.UsernameTxt.sendKeys(System.getProperty("testuser.username"));
-        LoginPage.PasswordTxt.sendKeys(System.getProperty("testuser.password"));
-
+    public static void EnterUserNameAndPassword(String username, String password){
+        LoginPage.UsernameTxt.sendKeys(username);
+        LoginPage.PasswordTxt.sendKeys(password);
     }
     public static void ClickLogin(){
         LoginPage.LoginBtn.click();
-
+    }
+    public static String GetLoginErrorMessageTxt(){
+        return LoginPage.LoginErrorMessage.getText();
+    }
+    public static boolean IsLoginErrorMessageDisplayed(){
+        return LoginPage.LoginErrorMessage.isDisplayed();
     }
 }

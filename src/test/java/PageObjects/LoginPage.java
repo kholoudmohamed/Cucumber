@@ -20,4 +20,7 @@ public class LoginPage extends BasePage {
     @FindBy(how = How.ID,using = "C003_btnLogin")
     public static WebElement LoginBtn ;
 
+    @FindBy(how = How.CSS,using = ".login-error.AAMWeb_loginForm_Label")
+    public static WebElement LoginErrorMessage ;
+
 }

@@ -3,10 +3,7 @@ package Definitions;
 import Actions.HomePageActions;
 import PageObjects.HomePage;
 import cucumber.api.PendingException;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import cucumber.api.java.en.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -44,4 +41,8 @@ public class CommonStepDefinitions {
 
     }
 
+    @But("^I shouldn't be directed to private Home Page$")
+    public void iShouldnTBeDirectedToPrivateHomePage() throws Throwable {
+        Assert.assertFalse("User could be in private site",driver.getCurrentUrl().contains("private"));
+    }
 }
