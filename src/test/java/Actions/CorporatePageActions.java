@@ -1,11 +1,14 @@
 package Actions;
 
 import PageObjects.CorporatePage;
+import Resources.configReader;
 import org.openqa.selenium.WebDriver;
 
 public class CorporatePageActions {
+    private static configReader data = new configReader();
+
     public static void GoTo(WebDriver driver) throws Exception{
-        driver.get(System.getProperty("base.url")+"/AAMWeb/BondOfferings/CorporateSearch.aspx");
+        driver.get(System.getProperty("base.url")+data.getCorporateSearchPageUrl());
     }
 
     public static void ClickOn_TopSearchBtn(){

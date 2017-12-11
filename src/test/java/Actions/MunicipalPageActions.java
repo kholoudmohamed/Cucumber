@@ -1,11 +1,14 @@
 package Actions;
 
 import PageObjects.MunicipalPage;
+import Resources.configReader;
 import org.openqa.selenium.WebDriver;
 
 public class MunicipalPageActions {
+    private static configReader data = new configReader();
+
     public static void GoTo(WebDriver driver) throws Exception{
-        driver.get(System.getProperty("base.url")+"/AAMWeb/BondOfferings/MunicipalSearch.aspx");
+        driver.get(System.getProperty("base.url")+data.getMunicipalPageUrl());
     }
 
     public static void ClickOn_TopSearchBtn(){

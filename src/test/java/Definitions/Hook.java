@@ -4,19 +4,30 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
+
+import Resources.configReader;
 
 public class Hook  {
 
     public static WebDriver driver;
-
+    private configReader data = new configReader();
 
     @Before
     public void InitializeTest()
     {
-        String exePath = "src\\test\\java\\resources\\chromedriver.exe";
-        System.setProperty("webdriver.chrome.driver", exePath);
-        driver = new ChromeDriver();
+        String browserName=data.getBrowser();
+        if (browserName.equals("chrome")){
+            System.setProperty("webdriver.chrome.driver", data.getChromeDriverPath());
+            driver = new ChromeDriver();
+        } else if(browserName.equals("firefox")){
+            System.setProperty("webdriver.gecko.driver", data.getFirefoxDriverPath());
+            driver = new FirefoxDriver();
+        }else {
+            System.out.println("Invalid browser name from properties file");
+        }
+
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
     }
