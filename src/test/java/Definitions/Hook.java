@@ -2,6 +2,7 @@ package Definitions;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -27,9 +28,14 @@ public class Hook  {
         }else {
             System.out.println("Invalid browser name from properties file");
         }
-
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
+
+        if (data.getScreenSize().equals("custom")){
+            Dimension d = new Dimension(Integer.parseInt(data.getScreenSizeHeight()),Integer.parseInt(data.getScreenSizeWidth()));
+            driver.manage().window().setSize(d);
+        }else{
+            driver.manage().window().maximize();
+        }
     }
     @After
     public void TearDownTest()

@@ -36,4 +36,13 @@ public class configReader {
     public String getMunicipalPageUrl(){
         return pro.getProperty("municipalSearchPage");
     }
+    public String getScreenSize(){
+        return pro.getProperty("screenSize");
+    }
+    public String getScreenSizeHeight(){
+        return pro.getProperty("screenSizeHeight");
+    }
+    public String getScreenSizeWidth(){
+        return pro.getProperty("screenSizeWidth");
+    }
 }
